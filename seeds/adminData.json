@@ -14,5 +14,10 @@
     "name": "mblackwell",
     "email": "mb@kinetic.com",
     "password": "password12345"
+  },
+  {
+    "name": "cponz",
+    "email": "cponz@kinetic.com",
+    "password": "admintest"
   }
 ]
