@@ -1,7 +1,7 @@
 {
-  "name": "tech-blog",
+  "name": "kinetic-tickets",
   "version": "1.0.0",
-  "description": "",
+  "description": "A fully functioning ticketing system without all the complications, frills and expenses you don’t need!",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChristopherPonzio/Tech-Blog.git"
+    "url": "git+https://github.com/mblackwellgca/Kinetic-Tickets.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Sumailah",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ChristopherPonzio/Tech-Blog/issues"
+    "url": "https://github.com/mblackwellgca/Kinetic-Tickets/issues"
   },
-  "homepage": "https://github.com/ChristopherPonzio/Tech-Blog#readme",
+  "homepage": "https://github.com/mblackwellgca/Kinetic-Tickets#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.3",
@@ -26,6 +26,6 @@
     "express-handlebars": "^6.0.3",
     "express-session": "^1.17.2",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.17.0"
+    "sequelize": "^6.18.0"
   }
 }
