@@ -1,17 +1,22 @@
 [
   {
-    "name": "Sal",
-    "email": "sal@hotmail.com",
+    "name": "Michelle",
+    "email": "Michelle@kinetic.com",
     "password": "password12345"
   },
   {
-    "name": "Lernantino",
-    "email": "lernantino@gmail.com",
+    "name": "Brian",
+    "email": "Brian@kinetic.com",
     "password": "password12345"
   },
   {
-    "name": "Amiko",
-    "email": "amiko2k20@aol.com",
+    "name": "Sumailah",
+    "email": "Sumailah@kinetic.com",
+    "password": "password12345"
+  },
+  {
+    "name": "Christopher",
+    "email": "Christoper@kinetic.com",
     "password": "password12345"
   }
 ]
