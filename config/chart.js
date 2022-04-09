@@ -1,8 +1,10 @@
+// Config
 const config = {
     type: 'doughnut',
     data: data,
   };
 
+// Setup
   const data = {
     labels: [
       'Red',
