@@ -33,7 +33,7 @@ This application was designed to have a simple ticketing system that is powerful
 
     You’ll also need the [dotenv package](https://www.npmjs.com/package/dotenv) to use environment variables, the [bcrypt package](https://www.npmjs.com/package/bcrypt) to hash passwords, and the [express-session](https://www.npmjs.com/package/express-session) and[connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize) packages to add authentication.
 
-**Note**: 
+* **Note**: 
     The [express-session](https://www.npmjs.com/package/express-session) package stores the session data on the client in a cookie. When you are idle on the site for more than a set time, the cookie will expire and you will be required to log in again to start a new session. This is the default behavior and you do not have to do anything to your application other than implement the npm package. 
 
 
