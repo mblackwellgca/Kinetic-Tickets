@@ -27,6 +27,30 @@ router.post("/", async (req, res) => {
         res.status(400).json(err);
       }
 });
+// const uploadDir = path.join('../public/upload');
+// const getUploadedFileData = (file) => ({
+//   name: file.name,
+//   uploadPath: path.join(uploadDir, file.name),
+//   uploadDir: uploadDir
+// });
+
+// router.post('/upload', (req, res) => {
+//   // Uploaded files:
+  
+//     if (!req.files) {
+//       return res.status(400).send('No files were uploaded.');
+//     }
+//     const testFile = req.files.sampleFile;
+//     const fileData = getUploadedFileData(sampleFile);
+
+//     testFile.mv(fileData.uploadPath, (err) => {
+//       if (err) {
+//         console.log('ERR', err); // eslint-disable-line
+//         return res.status(500).send(err);
+//       }
+//       res.json(fileData);
+//     });
+// });
 
 router.delete('/:id', async (req, res) => {
   try {
