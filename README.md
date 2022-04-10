@@ -1,6 +1,6 @@
 ![Github license](https://img.shields.io/badge/license-MIT-blueviolet.svg)
 
-# E-Commerce-Back-End
+# Kinetic-Tickets
 Want a fully functioning ticketing system without all the complications, frills and expenses you don’t need? 
 Look no further than the best B-Tier Ticketing system on the market. Ultra-simple, ultra-minimalist ticketing system for users who don’t need add-ons from A-Tier systems.
 
@@ -29,7 +29,7 @@ This application was designed to have a simple ticketing system that is powerful
 * Date added to ticket and comment
 
 ## Installation
-This application’s folder structure must follow the Model-View-Controller paradigm. You’ll need to use the [express-handlebars](https://www.npmjs.com/package/express-handlebars) package to implement Handlebars.js for your Views, use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect to a MySQL database for your Models, and create an Express.js API for your Controllers.
+* This application’s folder structure must follow the Model-View-Controller paradigm. You’ll need to use the [express-handlebars](https://www.npmjs.com/package/express-handlebars) package to implement Handlebars.js for your Views, use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect to a MySQL database for your Models, and create an Express.js API for your Controllers.
 
     You’ll also need the [dotenv package](https://www.npmjs.com/package/dotenv) to use environment variables, the [bcrypt package](https://www.npmjs.com/package/bcrypt) to hash passwords, and the [express-session](https://www.npmjs.com/package/express-session) and[connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize) packages to add authentication.
 
