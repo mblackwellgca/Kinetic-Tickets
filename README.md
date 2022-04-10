@@ -48,9 +48,10 @@ The following animation shows the application's functionality:
 * 💻 Michelle Blackwell https://github.com/mblackwellgca 
 * 💻 Brian Garcia https://github.com/itsbrianfire
 * 💻 Sumailah Amatul-Aziz https://github.com/SAziz24
+* 🔗 [Express-fileupload](https://www.npmjs.com/package/express-fileupload)
 * 🔗 [Sequelize](https://www.npmjs.com/package/sequelize)
 * 🔗 [MySQL2](https://www.npmjs.com/package/mysql2)
-* 🔗 https://www.heroku.com
+* 🔗 [Heroku](https://www.heroku.com)
 * 🔗 [express-handlebars](https://www.npmjs.com/package/express-handlebars)
 * 🔗 [dotenv package](https://www.npmjs.com/package/dotenv)
 * 🔗 [bcrypt package](https://www.npmjs.com/package/bcrypt)
