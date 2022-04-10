@@ -7,10 +7,11 @@
 </div>
 
 
-<section class="card post-list">
+<section class="card post-list commentList">
     <div class="card-header">
         <h3>Comments</h3>
     </div>
+    <img src="public/upload/dash.png">
 
     <div class="card-body">
     {{#each comments}}
@@ -43,10 +44,18 @@
             <label class="form-label" for="comment-body">Comment</label>
 
             <textarea name="comment-body" class="form-input"></textarea>
-
+     
             <button type="submit" class="btn">Submit</button>
         </div>
     </form>
+    <form ref='uploadForm' 
+      id='uploadForm' 
+      action='/upload' 
+      method='post' 
+      encType="multipart/form-data">
+        <input type="file" name="sampleFile" />
+        <input type='submit' value='Upload!' id='upload'/>
+    </form> 
 </div>
 
 <script src="../js/comment.js"></script>
