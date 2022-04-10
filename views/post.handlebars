@@ -2,29 +2,32 @@
   <h2>{{name}}</h2>
   <p>{{{get_emoji}}}</p>
   <p>{{description}}</p>
-  <p>{{id}}</p>
+  <a href="/edit/{{id}}">Edit Post</a>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
 </div>
 
 
-<section class="card">
+<section class="card post-list">
     <div class="card-header">
         <h3>Comments</h3>
     </div>
 
     <div class="card-body">
-        {{#each comments as |comment|}}
-            <div class="row mb-4 post">
-                 <div class="col-md-5">
-                    <p>
-                        {{body}}
-                    </p>
-                    <p>
-                        &mdash; {{post.user.name}} on {{format_date post.date_created}}
-                    </p>
-                </div>
+    {{#each comments}}
+    <div class="row mb-4 post">
+        <div class="col-md-8">
+             <p>
+                {{body}}
+            </p>
+             <p>
+                &mdash; {{user.name}}
+            </p>
+            <div class="col-md-4">
+                <button class="btn btn-sm btn-danger" data-id="{{id}}">DELETE</button>
             </div>
-        {{/each}}
+        </div>
+    </div>
+    {{/each}}
     </div>
 </section>
 
