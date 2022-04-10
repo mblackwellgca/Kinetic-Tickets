@@ -50,7 +50,7 @@ The following animation shows the application's functionality:
 * 💻 Sumailah Amatul-Aziz https://github.com/SAziz24
 * 🔗 [Sequelize](https://www.npmjs.com/package/sequelize)
 * 🔗 [MySQL2](https://www.npmjs.com/package/mysql2)
-* 🔗 https://www.heroku.com
+* 🔗 [Heroku](https://www.heroku.com)
 * 🔗 [express-handlebars](https://www.npmjs.com/package/express-handlebars)
 * 🔗 [dotenv package](https://www.npmjs.com/package/dotenv)
 * 🔗 [bcrypt package](https://www.npmjs.com/package/bcrypt)
