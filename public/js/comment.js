@@ -35,22 +35,22 @@ const delButtonHandler = async (event) => {
     }
   };
 
-  const uploadFormHandler = async (event) => {
-    if (1> 0) {
-      const fakename = document.querySelector('input[name="sampleFile"]').value.trim();
-      const name = fakename.slice(12);
-      console.log(name);
-      const comment = document.getElementById('.commentList');
-      const newComment = document.createElement('img');
-      newComment.setAttribute("class", "card-body");
-      newComment.setAttribute("src", `public/upload/${name}`);
-      comment.appendChild(newComment);
+  // const uploadFormHandler = async (event) => {
+  //   if (1> 0) {
+  //     const fakename = document.querySelector('input[name="sampleFile"]').value.trim();
+  //     const name = fakename.slice(12);
+  //     console.log(name);
+  //     const comment = document.getElementById('.commentList');
+  //     const newComment = document.createElement('img');
+  //     newComment.setAttribute("class", "card-body");
+  //     newComment.setAttribute("src", `public/upload/${name}`);
+  //     comment.appendChild(newComment);
       
-      } else {
-        alert('Failed to upload image');
-      }
+  //     } else {
+  //       alert('Failed to upload image');
+  //     }
     
-  };
+  // };
 
 document
     .querySelector('#new-comment-form')
@@ -58,6 +58,6 @@ document
 document
     .querySelector('.post-list')
     .addEventListener('click', delButtonHandler);
-document
-    .querySelector('#upload')
-    .addEventListener('click', uploadFormHandler);   
+// document
+//     .querySelector('#upload')
+//     .addEventListener('click', uploadFormHandler);   
