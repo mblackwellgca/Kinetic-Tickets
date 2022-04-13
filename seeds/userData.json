@@ -1,22 +1,22 @@
 [
   {
-    "name": "Michelle",
-    "email": "Michelle@kinetic.com",
+    "name": "Michael",
+    "email": "Michael@kinetic.com",
     "password": "password12345"
   },
   {
-    "name": "Brian",
-    "email": "Brian@kinetic.com",
+    "name": "Briana",
+    "email": "Briana@kinetic.com",
     "password": "password12345"
   },
   {
-    "name": "Sumailah",
-    "email": "Sumailah@kinetic.com",
+    "name": "Sunny",
+    "email": "Sunny@kinetic.com",
     "password": "password12345"
   },
   {
-    "name": "Christopher",
-    "email": "Christoper@kinetic.com",
+    "name": "Chris",
+    "email": "Chris@kinetic.com",
     "password": "password12345"
   }
 ]

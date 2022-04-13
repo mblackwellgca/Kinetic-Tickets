@@ -2,29 +2,36 @@
   <h2>{{name}}</h2>
   <p>{{{get_emoji}}}</p>
   <p>{{description}}</p>
+  <a href="/edit/{{id}}">Edit Post</a>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
 </div>
 
-{{#if post.Comments}}
-    <section class="card">
-        <div class="card-header">
-            <h3>Comments</h3>
-        </div>
 
-        <div class="card-body">
-            {{#each post.Comments}}
-            <div>
-                <p>
-                    {{body}}
-                </p>
-                <p>
-                    &mdash; {{post.user.name}} on {{format_date post.date_created}}
-                </p>
+<section class="card post-list commentList">
+    <div class="card-header">
+        <h3>Comments</h3>
+    </div>
+    <img src="public/upload/dash.png">
+
+    <div class="card-body">
+    {{#each comments}}
+    <div class="row mb-4 post">
+        <div class="col-md-8">
+             <p>
+                {{body}}
+            </p>
+             <p>
+                &mdash; {{user.name}}
+            </p>
+            <div class="col-md-4">
+                <button class="btn btn-sm btn-danger" data-id="{{id}}">DELETE</button>
             </div>
-            {{/each}}
         </div>
-    </section>
-    {{/if}}
+    </div>
+    {{/each}}
+    </div>
+</section>
+
 
     <form id="new-comment-form" class="card">
         <div class="card-header">
@@ -32,15 +39,23 @@
         </div>
 
         <div class="card-body">
-            <input type="hidden" name="post-id" value="{{post.id}}" />
+            <input type="hidden" name="post-id" value="{{id}}">
 
             <label class="form-label" for="comment-body">Comment</label>
 
             <textarea name="comment-body" class="form-input"></textarea>
-
+     
             <button type="submit" class="btn">Submit</button>
         </div>
     </form>
+    <form ref='uploadForm' 
+      id='uploadForm' 
+      action='/upload' 
+      method='post' 
+      encType="multipart/form-data">
+        <input type="file" name="sampleFile" />
+        <input type='submit' value='Upload!' id='upload'/>
+    </form> 
 </div>
 
-<script src="/javascript/comment.js"></script>
+<script src="../js/comment.js"></script>
