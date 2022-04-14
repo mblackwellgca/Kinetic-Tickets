@@ -41,4 +41,50 @@
   {{/if}}
 </div>
 
-<script src="./js/dashboard.js"></script>
+
+<html lang="en">
+<head>
+    <!-- <meta> tags> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Kinetic Tickets</title>
+</head>
+
+<body>
+
+<div>
+  <canvas id="myChart"></canvas>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+
+
+
+const data = {
+  labels: [
+    'Your Unanswered Tickets',
+    'Your Answered Tickets',
+  ],
+  datasets: [{
+    label: 'Ticket Response',
+    data: [2,1],
+    backgroundColor: [
+      'rgb(48, 71, 94)',
+      'rgb(240, 84, 84)',
+    ],
+    hoverOffset: 8
+  }]
+};
+
+const config = {
+  type: 'doughnut',
+  data: data,
+};
+</script>
+<script>
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+</script>
+</body>
+</html>
