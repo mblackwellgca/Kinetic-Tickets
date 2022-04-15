@@ -2,7 +2,7 @@ const router = require('express').Router();
 const fileUpload = require('express-fileupload');
 const { Post, User, Comment } = require('../models');
 const  withAuth = require('../utils/auth');
-const  withAdmin = require('../utils/auth');
+
 
 router.get('/', async (req, res) => {
   try {
@@ -142,7 +142,7 @@ router.get('/admin', async (req, res) => {
     res.render('admin', { 
       posts, 
       logged_in: req.session.logged_in,
-      user_role: req.session.user_role.Admin
+      
     });
   } catch (err) {
     res.status(500).json(err);
