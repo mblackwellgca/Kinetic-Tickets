@@ -1,7 +1,8 @@
 const router = require('express').Router();
 const fileUpload = require('express-fileupload');
 const { Post, User, Comment } = require('../models');
-const withAuth = require('../utils/auth');
+const  withAuth = require('../utils/auth');
+const  withAdmin = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
@@ -120,6 +121,32 @@ router.post('/upload', function(req, res) {
     if (err)
       return res.status(500).send(err);
   });
+});
+
+router.get('/admin', async (req, res) => {
+  try {
+    // Get all posts and JOIN with user data
+    const postData = await Post.findAll({
+      include: [
+        {
+          model: User,
+          attributes: ['name'],
+        },
+      ],
+    });
+
+    // Serialize data so the template can read it
+    const posts = postData.map((post) => post.get({ plain: true }));
+
+    // Pass serialized data and session flag into template
+    res.render('admin', { 
+      posts, 
+      logged_in: req.session.logged_in,
+      user_role: req.session.user_role.Admin
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 module.exports = router;

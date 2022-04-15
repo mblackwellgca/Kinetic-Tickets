@@ -6,11 +6,11 @@
 
 <div class="row mt-4">
   <div class="col-md-6">
-    <h3>Create a New post:</h3>
+    <h3>Create a New Ticket:</h3>
 
     <form class="form new-post-form">
       <div class="form-group">
-        <label for="post-name">post name:</label>
+        <label for="post-name">Ticket name:</label>
         <input class="form-input" type="text" id="post-name" name="post-name" />
       </div>
       <div class="form-group">
@@ -25,7 +25,7 @@
 
   {{#if posts.length}}
   <div class="col-md-6 post-list">
-    <h3>Current posts:</h3>
+    <h3>Active Tickets:</h3>
 
     {{#each posts as |post|}}
     <div class="row mb-2">
@@ -42,14 +42,14 @@
 </div>
 
 
-<html lang="en">
+
 <head>
     <!-- <meta> tags> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <title>Kinetic Tickets</title>
 </head>
 
-<body>
+
 
 <div>
   <canvas id="myChart"></canvas>
@@ -86,5 +86,4 @@ const config = {
     config
   );
 </script>
-</body>
-</html>
+<script src="../js/dashboard.js"></script>
