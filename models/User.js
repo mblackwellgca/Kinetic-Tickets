@@ -36,10 +36,6 @@ User.init(
         len: [8],
       },
     },
-    role: {
-      type: DataTypes.STRING,
-      defaultValue: 'Basic',
-    }
   },
   {
     hooks: {
