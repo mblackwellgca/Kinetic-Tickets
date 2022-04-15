@@ -7,4 +7,14 @@ const withAuth = (req, res, next) => {
   }
 };
 
-module.exports = withAuth;
+const withAdmin = (role) => {
+  return (req, res, next) => {
+    if (req.user.role !== role) {
+    res.status(401)
+    return res.send('Not Allowed')
+  } else {
+  next()
+  }
+}
+};
+module.exports = withAuth, withAdmin;

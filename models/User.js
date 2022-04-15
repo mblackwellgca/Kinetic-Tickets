@@ -1,6 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
+const { BasicPlatform } = require('chart.js');
 
 class User extends Model {
   checkPassword(loginPw) {
@@ -35,6 +36,10 @@ User.init(
         len: [8],
       },
     },
+    role: {
+      type: DataTypes.STRING,
+      defaultValue: 'Basic',
+    }
   },
   {
     hooks: {
