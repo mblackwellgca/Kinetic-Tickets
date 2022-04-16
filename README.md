@@ -5,7 +5,7 @@ Want a fully functioning ticketing system without all the complications, frills 
 Look no further than the best B-Tier Ticketing system on the market. Ultra-simple, ultra-minimalist ticketing system for users who don’t need add-ons from A-Tier systems.
 
 ## Live Links
-* 📽️ Heroku: 
+* 📽️ Heroku: https://evening-tor-60812.herokuapp.com/
 * 🎥 Github: https://mblackwellgca.github.io/Kinetic-Tickets/
 * 🌍 Repository: https://github.com/mblackwellgca/Kinetic-Tickets
 
@@ -39,8 +39,7 @@ This application was designed to have a simple ticketing system that is powerful
 
 ## Usage
 The following animation shows the application's functionality:
-![Demo Screenshot]()
-![Demo Screenshot]()
+![Demo Screenshot](./public/upload/Kinetic-Tickets.gif)
 
 ## Credits:
 * 🏫 Sandra Smith
