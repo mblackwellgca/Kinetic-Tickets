@@ -39,7 +39,7 @@ This application was designed to have a simple ticketing system that is powerful
 
 ## Usage
 The following animation shows the application's functionality:
-![Demo Screenshot](./public/upload/Kinetic-Tickets.gif)
+![Demo Screenshot](./public/upload/kineticTickets.gif)
 
 ## Credits:
 * 🏫 Sandra Smith
